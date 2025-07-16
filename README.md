@@ -21,13 +21,24 @@ Durante este módulo, são exploradas as principais estruturas de controle da li
 - Estruturas de repetição: `for`, `while` e `do-while`
 
 
+- Exercícios focados em tabuada, cálculo de IMC, seleção de números pares/ímpares, e divisibilidade
+
+O código está organizado para facilitar a compreensão e prática. Ideal para quem está iniciando no desenvolvimento Java e deseja fortalecer a lógica de programação.
+
+---
+
+**Ferramentas usadas:**  
+- Java JDK  
+- IntelliJ IDEA  
+
+Sinta-se à vontade para explorar e praticar!
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // ======================================
         // Exercício 1: Tabuada de 1 a 10
         System.out.println("Exercício 1: Tabuada");
         System.out.println("Digite um número para ver a tabuada de 1 até 10:");
@@ -35,10 +46,8 @@ public class Main {
         for (int i = 1; i <= 10; i++) {
             System.out.printf("%d x %d = %d%n", number, i, number * i);
         }
-
         System.out.println("\n======================================");
 
-        // ======================================
         // Exercício 2: Cálculo do IMC
         System.out.println("Exercício 2: Cálculo do IMC");
         System.out.println("Informe a altura (em metros):");
@@ -60,11 +69,9 @@ public class Main {
         } else {
             System.out.println("Obesidade III (Mórbida)");
         }
-
         System.out.println("\n======================================");
 
-        // ======================================
-        // Exercício 3: Mostrar números pares ou ímpares em ordem decrescente
+        // Exercício 3: Números pares ou ímpares em ordem decrescente
         System.out.println("Exercício 3: Números pares ou ímpares");
         System.out.println("Digite o primeiro número:");
         int primeiro = scanner.nextInt();
@@ -81,10 +88,8 @@ public class Main {
                 System.out.println(i);
             }
         }
-
         System.out.println("\n======================================");
 
-        // ======================================
         // Exercício 4: Números divisíveis pelo primeiro número
         System.out.println("Exercício 4: Divisibilidade");
         System.out.println("Informe um número base:");
@@ -106,20 +111,7 @@ public class Main {
                 break;
             }
         }
-
         System.out.println("\nFim dos exercícios.");
         scanner.close();
     }
 }
-
-- Exercícios focados em tabuada, cálculo de IMC, seleção de números pares/ímpares, e divisibilidade
-
-O código está organizado para facilitar a compreensão e prática. Ideal para quem está iniciando no desenvolvimento Java e deseja fortalecer a lógica de programação.
-
----
-
-**Ferramentas usadas:**  
-- Java JDK  
-- IntelliJ IDEA  
-
-Sinta-se à vontade para explorar e praticar!

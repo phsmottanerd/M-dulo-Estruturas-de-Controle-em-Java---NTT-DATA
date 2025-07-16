@@ -1,7 +1,10 @@
 # Módulo Estruturas de Controle em Java - NTT DATA
 
-![Java](https://img.shields.io/badge/Java-%23F89820?style=for-the-badge&logo=java&logoColor=white&labelColor=black)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-%23000000?style=for-the-badge&logo=intellij-idea&logoColor=white&labelColor=purple)
+![Java](https://img.shields.io/badge/Java-%23007396?style=for-the-badge&logo=java&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-%2368159D?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![NTT DATA](https://img.shields.io/badge/NTT%20DATA-%230078B8?style=for-the-badge&logo=building&logoColor=white)
+![DIO.me](https://img.shields.io/badge/DIO.me-%23F26C4F?style=for-the-badge&logo=graduation-cap&logoColor=white)
+
 
 ## Sobre o Módulo
 

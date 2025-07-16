@@ -25,6 +25,9 @@ O módulo é ideal para quem está começando no desenvolvimento em Java e quer 
 
 ---
 
+## Código Java com os 4 exercícios juntos
+
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -106,96 +109,4 @@ public class Main {
         System.out.println("\nFim dos exercícios.");
         scanner.close();
     }
-
-
-    import java.util.Scanner;
-Exercício 2: Cálculo do IMC
-
-public class CalculoIMC {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Informe a altura (em metros):");
-        double altura = scanner.nextDouble();
-        System.out.println("Digite seu peso (em kg):");
-        double peso = scanner.nextDouble();
-
-        double imc = peso / (altura * altura);
-
-        if (imc <= 18.5) {
-            System.out.println("Abaixo do peso");
-        } else if (imc <= 24.9) {
-            System.out.println("Peso ideal");
-        } else if (imc <= 29.9) {
-            System.out.println("Levemente acima do peso");
-        } else if (imc <= 34.9) {
-            System.out.println("Obesidade Grau I");
-        } else if (imc <= 39.9) {
-            System.out.println("Obesidade Grau II (Severa)");
-        } else {
-            System.out.println("Obesidade III (Mórbida)");
-        }
-        scanner.close();
-    }
-}
-
-Exercício 3: Números pares ou ímpares em ordem decrescente
-import java.util.Scanner;
-
-public class ParesOuImpares {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Digite o primeiro número:");
-        int primeiro = scanner.nextInt();
-
-        System.out.println("Digite o segundo número (maior que o primeiro):");
-        int segundo = scanner.nextInt();
-
-        System.out.println("Deseja ver os números pares ou ímpares? (par/impar)");
-        String escolha = scanner.next();
-
-        System.out.printf("Números %s entre %d e %d (decrescente):%n", escolha, segundo, primeiro);
-        for (int i = segundo; i >= primeiro; i--) {
-            if (escolha.equalsIgnoreCase("par") && i % 2 == 0) {
-                System.out.println(i);
-            } else if (escolha.equalsIgnoreCase("impar") && i % 2 != 0) {
-                System.out.println(i);
-            }
-        }
-        scanner.close();
-    }
-}
-Exercício 4: Números divisíveis pelo primeiro número
-
-import java.util.Scanner;
-
-public class Divisibilidade {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Informe um número base:");
-        int baseNumber = scanner.nextInt();
-
-        while (true) {
-            System.out.println("Informe um número para verificação:");
-            int toVerify = scanner.nextInt();
-
-            if (toVerify < baseNumber) {
-                System.out.printf("Informe um número maior que %d%n", baseNumber);
-                continue;
-            }
-
-            int resto = toVerify % baseNumber;
-            System.out.printf("%d %% %d = %d%n", toVerify, baseNumber, resto);
-
-            if (resto != 0) {
-                break;
-            }
-        }
-        scanner.close();
-    }
-}
-
-
-
 }
